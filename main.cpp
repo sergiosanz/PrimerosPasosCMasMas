@@ -20,9 +20,9 @@ int main()
     cout<<*p1<<endl;     //"*" es el operador de puntero, lo que hace que la direccion devuelva el contenido, en vez de la direccion de memoria. 
     cout<<p2<<endl;
 
-    MyClass stack = MyClass();  //"memoria de monticulo(heap)" puede variar el tamaño(memoria dinámica). Esta variable es un objetio puro.
-    MyClass* heap = new MyClass();  //"memoria de pila(stack)" el tamaño es fijo, pero es más rápida. Arduino solo tiene esta. 
-                                    //Al añadirle el asterisco a la variable, se convierte en un puntero.
+    MyClass* heap = new MyClass();  //"memoria de monticulo(heap)" puede variar el tamaño(memoria dinámica). Esta variable es un objetio puro.
+    MyClass stack = MyClass();  //"memoria de pila(stack)" el tamaño es fijo, pero es más rápida. Arduino solo tiene esta. 
+                                //Al añadirle el asterisco a la variable, se convierte en un puntero.
     
     cout<<&stack<<endl; //necesita el alias
     cout<<heap<<endl;   //al ser ya un puntero, no necesita el asterisco para convertirlo en puntero 
